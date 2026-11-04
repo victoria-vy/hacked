@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECURITY ALERT - Herr Michael</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 30px 15px;
+            background: #e8e8e8;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 40px auto;
+            background: white;
+            border: 3px solid #8b0000;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .warning {
+            background: #8b0000;
+            color: white;
+            padding: 15px;
+            font-size: 23px;
+            font-weight: bold;
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0.65; }
+        }
+
+        h1 {
+            color: #8b0000;
+            font-size: 38px;
+        }
+
+        .progress-container {
+            background: #ddd;
+            height: 25px;
+            border: 1px solid #888;
+            margin: 20px 0;
+        }
+
+        .progress {
+            background: #8b0000;
+            height: 25px;
+            width: 99%;
+            animation: loading 4s ease-in-out;
+        }
+
+        @keyframes loading {
+            from { width: 0; }
+            to { width: 99%; }
+        }
+
+        .message {
+            background: #f2eeee;
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px dashed #8b0000;
+        }
+
+        .reveal {
+            display: none;
+            background: #eeeeee;
+            padding: 25px;
+            margin-top: 25px;
+            border: 2px solid #555;
+        }
+
+        button {
+            background: #8b0000;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 17px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .footer {
+            color: #777;
+            font-size: 12px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="warning">
+        ⚠️ SECURITY ALERT ⚠️
+    </div>
+
+    <h1>DU WURDEST GEHACKT!!!</h1>
+
+    <h2>Hallo Herr Michael!</h2>
+
+    <p>
+        Sie haben gerade unser unglaubliches
+        99%-Rabatt-Angebot angeklickt.
+    </p>
+
+    <div class="message">
+        <h2 style="color:#8b0000;">
+            SYSTEMÜBERNAHME ERFOLGREICH!
+        </h2>
+
+        <p>Hacker-Level:</p>
+
+        <h1>99%</h1>
+
+        <div class="progress-container">
+            <div class="progress"></div>
+        </div>
+
+        <p>
+            STATUS: VOLLSTÄNDIG KOMPROMITTIERT
+        </p>
+    </div>
+
+    <h2>WAS IST PASSIERT?</h2>
+
+    <p>✔ Sie haben auf den Kauf-Button geklickt.</p>
+    <p>✔ Sie haben unser Angebot gesehen.</p>
+    <p>✔ Sie sind auf unseren Scherz hereingefallen.</p>
+
+    <div class="message">
+        <h2>IHRE GERÄTE SIND IN GEFAHR!!!</h2>
+
+        <p>Ihr Drucker gehört uns.</p>
+        <p>Ihr WLAN gehört uns.</p>
+        <p>Sogar Ihr Toaster ist nicht mehr sicher.</p>
+    </div>
+
+    <button onclick="document.getElementById('reveal').style.display='block'; this.style.display='none';">
+        WAS PASSIERT JETZT?!
+    </button>
+
+    <div class="reveal" id="reveal">
+
+        <h1>😂 REINGELEGT!!!</h1>
+
+        <h2>HERR MICHAEL, DAS WAR NUR EIN SCHERZ!</h2>
+
+        <p>
+            Ihr Computer wurde NICHT gehackt.
+        </p>
+
+        <p>
+            Es wurden keine Daten ausgelesen,
+            keine Dateien verändert und nichts installiert.
+        </p>
+
+        <h2 style="color:#8b0000;">
+            ABER SIE HABEN 99% RABATT VERPASST!!!
+        </h2>
+
+        <p>
+            Mit dubiosen Grüßen,<br>
+            <strong>SUPER MEGA SOFTWARE GmbH</strong>
+        </p>
+
+    </div>
+
+    <div class="footer">
+        © 2026 SUPER MEGA SOFTWARE GmbH<br>
+        Diese Seite ist eine harmlose Scherzseite.
+    </div>
+
+</div>
+
+</body>
+</html>
